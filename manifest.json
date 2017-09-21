@@ -1,11 +1,11 @@
 {
     "manifest_version": 2,
-    "name": "Auto Library Proxy Access for WashU",
-    "version": "2015.11.23",
-    "author": "Nick Semenkovich",
-    "description": "Automatically load journal websites using Becker and Libproxy. By Nick Semenkovich <semenko@alum.mit.edu>",
+    "name": "Auto Library Proxy Access for HMS",
+    "version": "2017.9.18",
+    "author": "Nick Semenkovich and David Rubins",
+    "description": "Automatically load journal websites using HMS Proxy.",
     "background": {
-        "scripts": ["javascript/lso.js", "javascript/parseuri.js", "javascript/journals.js", "javascript/userhint.js", "javascript/background.js"]
+        "scripts": ["javascript/lso.js", "javascript/journals.js", "javascript/background.js"]
     },
     "icons": {
         "16":"images/schollidesign16.png",
@@ -14,12 +14,11 @@
     },
     "options_page": "views/options.html",
     "permissions": [
-        "tabs", "webNavigation", "https://becker.wustl.edu/*", "https://update.epoxate.com/becker-extension/*", "notifications"
+        "tabs", "webNavigation", "blocking"
     ],
-    "content_security_policy": "script-src 'self' https://becker.wustl.edu; object-src 'self' https://becker.wustl.edu; connect-src 'self' https://becker.wustl.edu https://update.epoxate.com",
     "browser_action": {
         "default_icon": "images/schollidesign19.png",
-        "default_title": "Reload using WashU Proxy"
+        "default_title": "Reload using HMS Proxy"
     },
     "web_accessible_resources": [ "images/schollidesign48.png" ]
 }
